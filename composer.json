@@ -1,0 +1,12 @@
+{
+    "name": "ropii412/projek_uts",
+    "authors": [
+        { 
+            "name": "ropii412",
+            "email": "ropiia6@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^6.5"
+    }
+}
