@@ -10,15 +10,14 @@ if($koneksi->connect_error) {
 	echo "Koneksi ke basis data sukses!";
 }
 
-
-$query = "delete from mahasiswa where nim = " .
-$_GET["nim"];
-
-//echo $query;
+$query = "update mahasiswa".
+      "   set nama = '" . $_POST['nama'] . "', ".
+      "   jurusan = '" . $_POST['jurusan'] . "' " .
+      "   where nim = " . $_POST['nim'];
 
 if ($koneksi->query($query)==true) {
-  echo "<br><b>data dengan nim ".$_GET["nim"].
-  " sudah dihapus data bisa dilihat".
+  echo "<br><b>data ".$_POST["nama"].
+  " sudah berubah. data bisa dilihat ".
   '<a href="index.php">disini</a>';
 }else {
   echo "error : ".$query."->".$koneksi->error;

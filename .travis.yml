@@ -1,19 +1,17 @@
 language: php
 
-php:"7.0"
-
 env:
   global:
     - 'FTP_USER=moreart'
     - 'FTP_PASS=Aliyah123!'
 
-  script:
-    - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd mahasiswa'"
-    - "curl -T coba.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
-    - "curl -T edit.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
-    - "curl -T hapus.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
-    - "curl -T koneksi.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
-    - "curl -T index.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
-    - "curl -T simpan.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
-    - "curl -T tambah.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
-    - "curl -T update.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
+script:
+  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html'"
+  - "curl -T coba.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T edit.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T hapus.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T koneksi.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T index.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T simpan.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T tambah.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T update.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
