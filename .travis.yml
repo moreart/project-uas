@@ -1,10 +1,12 @@
 language: php
 
+php:"7.0"
+
 env:
   global:
     - 'FTP_USER=moreart'
     - 'FTP_PASS=Aliyah123!'
 
   script:
-    - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd praktek-4d'"
-    - "curl -T coba.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/praktek-4d/"
+    - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd mahasiswa'"
+    - "curl -T coba.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
