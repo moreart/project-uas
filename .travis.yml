@@ -10,3 +10,10 @@ env:
   script:
     - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd mahasiswa'"
     - "curl -T coba.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
+    - "curl -T edit.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
+    - "curl -T hapus.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
+    - "curl -T koneksi.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+    - "curl -T index.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
+    - "curl -T simpan.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
+    - "curl -T tambah.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
+    - "curl -T update.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/mahasiswa/"
