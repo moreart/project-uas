@@ -1,0 +1,5 @@
+https://github.com/moreart/project-uas.git
+
+https://travis-ci.org/moreart/project-uas
+
+https://moreart.000webhostapp.com/
