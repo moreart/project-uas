@@ -1,5 +1,0 @@
-https://github.com/sabdamukhammad/project_uas_data_mahasiswa.git
-
-https://travis-ci.org/sabdamukhammad/project_uas_data_mahasiswa
-
-https://sabdamukh.000webhostapp.com/
