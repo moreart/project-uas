@@ -1,9 +1,9 @@
 <?php
 
 $server = "localhost";
-$user = "root";
-$password = "";
-$nama_database = "uts";
+$user = "id5676181_dev1";
+$password = "Aliyah123!";
+$nama_database = "id5676181_db_mahasiswa";
 
 $db = mysqli_connect($server, $user, $password, $nama_database);
 
